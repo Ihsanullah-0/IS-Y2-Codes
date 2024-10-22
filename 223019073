@@ -1,0 +1,247 @@
+import java.util.Scanner; 
+public class Q1_Even_or_Odd { 
+public static void main(String[] args) { 
+Scanner scn = new Scanner(System.in); 
+System.out.print("Please enter a number: "); 
+int number; 
+number = scn.nextInt();
+if (number % 2 == 0) { 
+System.out.println(number + " must be an Even number."); } 
+else { 
+System.out.println(number + " must be an odd number."); 
+}
+ }
+ }
+
+
+import java.util.Scanner;
+public class Q2_Grade_category {
+public static void main (String args[]){
+Scanner scn = new Scanner(System.in);
+System.out.print("Please enter your Grade with Capital letter: ");
+char Grade;
+Grade=scn.next().charAt(0);
+switch(Grade){
+case 'A' :
+System.out.println(" Grade's Message : Excellent");
+break;
+case 'B' :
+System.out.println(" Grade's Message : Very Good");
+break;
+case 'C' :
+System.out.println(" Grade's Message : Well Done");
+break;
+case 'D' :
+System.out.println(" Grade's Message : Satisfactory ");
+break;
+case 'F' :
+System.out.println(" Grade's Message : Fail");
+break;
+default:
+System.out.println(" Grade's Message : invalid input");
+}
+}
+}
+
+
+import java.util.Scanner;
+public class Q3_Leap_Year {
+   public static void main(String[] args){
+      int year;
+      System.out.println("Enter an Year : ");
+      Scanner scn = new Scanner(System.in);
+      year = scn.nextInt();
+
+      if (((year % 4 == 0) && (year % 100!= 0)) || (year%400 == 0)){
+         System.out.println("entered year is a leap year");
+         
+         /*Check if the year is divisible by 4 but not 100 or divisible by 400
+         , DISPLAY "leap year ; Otherwise, DISPLAY "not leap year" */
+         
+      }
+      else{
+         System.out.println("entered year is not a leap year");
+      }
+      
+   }
+}    
+
+
+
+import java.util.Scanner;
+public class Q4_Largest {
+public static void main (String arg[]){
+
+int num1 , num2 ,num3 ;
+Scanner scn = new Scanner(System.in);
+System.out.println("please enter those three numbers : ");
+
+num1=scn.nextInt();
+num2=scn.nextInt();
+num3=scn.nextInt();
+
+if(num1>num2 && num1>num3){
+System.out.println("the greatest number is :" +num1);
+}
+else if(num2>num1 && num2>num3){
+System.out.println("the greatest number is :" +num2);
+}
+else if(num3>num1 && num3>num2){
+System.out.println("the greatest number is :" +num3);
+}
+else{
+System.out.println("some of these numbers are equal");
+}
+}
+}
+
+
+import java.util.Scanner;
+public class Q5_Integers {
+public static void main (String arg[]){
+
+int number;
+Scanner scn = new Scanner(System.in);
+System.out.print("please enter the number : ");
+
+number=scn.nextInt();
+System.out.println();
+
+if(number > 0){
+System.out.print(+number);
+System.out.println(" : is a Positive number");
+}
+
+else if(number < 0){   
+System.out.print(+number);
+System.out.println(" : is a Negative number"); 
+}
+
+else{
+System.out.print(+number);
+System.out.println(" : is zero");
+} 
+
+}
+}
+
+
+public class Q6_Triangle_pattern {
+    public static void main(String[] args) {
+        
+        int row_num = 7;
+
+        for (int i = 1; i <= row_num ; i++) {
+            for (int j = i; j >= 1; j--) {
+                System.out.print(j);
+            }
+            System.out.println();
+        }
+    }   
+}
+
+
+
+import java.util.Scanner;
+public class Q7_Diamond_shape {
+        public static void main(String[] args)
+    {
+ 
+        int number;
+        System.out.println("please enter the number of rows :");
+        Scanner sca = new Scanner(System.in);
+        number=sca.nextInt();
+        int m, n;
+ 
+        for (m = 1; m <= number; m++) {
+            for (n = 1; n <= number - m; n++) {
+                System.out.print(" ");
+            }
+ 
+            for (n = 1; n <= m * 2 - 1; n++) {
+                System.out.print("*");
+            }
+ 
+            System.out.println();
+        }
+ 
+        for (m = number - 1; m > 0; m--) {
+            for (n = 1; n <= number - m; n++) {
+                System.out.print(" ");
+            }
+
+
+public class Q8_Average {
+public static void main(String[] args) {   
+       
+        int[] numbers = new int[]{10, 12, 34, 23, 56, 78};
+        int sum = 0;
+        double average;
+        
+       
+        for (int i = 0; i < numbers.length; i++) {
+          
+            sum = sum + numbers[i];
+        }
+        
+        average = sum / numbers.length;
+        
+        System.out.println("Average value of the array elements is : " + average);
+        
+    }
+    
+}
+
+            for (n = 1; n <= m * 2 - 1; n++) {
+                System.out.print("*");
+            }
+            System.out.println();
+            
+        }
+    }  
+}
+
+
+
+public class Q9_Reverse_Array {
+     public static void main(String[] args) {  
+         
+        int [] values = new int [] {3,4,6,1,9,7,5,8}; 
+        
+        System.out.println("Original array: ");  
+        
+        for (int i = 0; i < values.length; i++) {  
+            System.out.print(values[i]);  
+        }  
+        
+        System.out.println(); 
+        System.out.println(); 
+        
+        System.out.println("Array in reverse order: ");  
+        
+        for (int i = values.length-1; i >= 0; i--) {  
+            System.out.print(values[i]);  
+        }  
+    }  
+    
+}
+
+
+
+public class Q10_Largest_in_array {
+        public static void main(String[] args) {  
+    
+        int [] arr = new int [] {34,23,12,45,67,89,234,26,10,30,43}; 
+        
+        //Initialize max with first element of array.  
+        int max = arr[0];  
+        
+        for (int i = 0; i < arr.length; i++) {  
+            //Compare elements of array with max  
+           if(arr[i] > max)  
+               max = arr[i];  
+        }  
+        System.out.println("Largest element present in given array: " + max);  
+    } 
+}
+
